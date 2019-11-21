@@ -1,0 +1,9 @@
+.landing-background {
+    background-image: url('../img/hackathonpic.jpeg');
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+}
