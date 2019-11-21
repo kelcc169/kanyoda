@@ -2,6 +2,7 @@ import './App.css';
 import React, { useEffect, useState } from 'react';
 import Unsplash from 'unsplash-js';
 import dotenv from 'dotenv';
+import QuoteDisplay from './QuoteDisplay';
 dotenv.config()
 
 // const unsplash = new Unsplash({ accessKey: process.env.ACCESS_KEY });
@@ -35,6 +36,7 @@ const App = () => {
 
     <div className="App">
       <header className="App-header">
+        <QuoteDisplay />
         {img}
         {/* <img src={} className="background" /> */}
         <p>
