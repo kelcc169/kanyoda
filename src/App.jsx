@@ -1,17 +1,14 @@
 import './App.css';
-import React, { useEffect, useState } from 'react';
-import Unsplash from 'unsplash-js';
-import QuoteDisplay from './QuoteDisplay';
 import './css/HomePage.css';
-import dotenv from 'dotenv';
-dotenv.config()
-
-const unsplash = new Unsplash({ accessKey: process.env.ACCESS_KEY });
+import React from 'react';
+import QuoteDisplay from './QuoteDisplay';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 const App = () => {
 
   return (
     <Router>
+<<<<<<< HEAD
       <div className="landing-background">
         <header className="App-header">
           <p>
@@ -27,6 +24,10 @@ const App = () => {
       </div>
 
 
+=======
+      {/* <Route exact path='/' render={<LandingPage /> } /> */}
+      <Route path='/quotes' render={<QuoteDisplay />} />
+>>>>>>> cedadea7accfc9692ca427b30519c3504a09748b
     </Router>
   );
 }
