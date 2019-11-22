@@ -29,9 +29,10 @@ input[type="text"]
     border: none;
     outline: none;
     color:white;
-    font-size: 50px;
-    margin-left: 60px;
-    
+    font-size: 60px;
+    /* margin-left: 0px; */
+    size:20px;
+    margin-top: 20px;
 }
 button[type="submit"]
 {
@@ -41,10 +42,13 @@ button[type="submit"]
     color:white;
     margin: 0 auto;
     font-size: 30px;
-    
+    margin-top: 150px;
 }
 a {
     color: greenyellow;
     text-decoration: none;
     
+}
+input::placeholder {
+    color: white;
 }

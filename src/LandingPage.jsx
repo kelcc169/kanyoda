@@ -1,12 +1,18 @@
-import React from 'react';
+import React,{ useState}from 'react';
+import {Link } from 'react-router-dom';
+import QuoteDisplay from './QuoteDisplay'
 import './css/HomePage.css';
-import { 
-    BrowserRouter as Router,
-    Link
-} from 'react-router-dom';
 
 const LandingPage = () => {
-    const []
+    const [ text, setText ] = useState({
+        input: ''
+    });
+
+    const handleOnChange = (e) => {
+        setText({
+            ...text,
+            [e.target.name]: e.target.value})
+    }
     return (
         <div className="landing-background">
             <div className='content'>
@@ -15,12 +21,12 @@ const LandingPage = () => {
                 Answers, you seek....
                 </p>
                 <form>
-                <input type='text' placeholder='Find your Kan-Yoda'></input> <br />
-                <button type="submit"><Link to='/quotes'>Submit</Link></button>
+                <input type='text' onChange={handleOnChange} name="input" value={text.input} placeholder='Please type text'></input> <br />
+                <button type="submit"><Link to='/quotes'>KAN-YODA</Link></button>
                 
                 </form>
 
-
+                <QuoteDisplay input={text} />
             </div>
     
     </div>
