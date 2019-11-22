@@ -7,8 +7,7 @@ dotenv.config()
 
 const unsplash = new Unsplash({ accessKey: 'a50a457eebd47cf427fcb3e1e23f2728eaeaf1b00b329dbe484df2242a670b0a', secret: process.env.SECRET_KEY });
 
-const QuoteDisplay = (props) => {
-  console.log(props)
+const QuoteDisplay = ({text}) => {
   const [ photo, setPhoto ] = useState();
   const [ yodaQuote, setYodaQuote ] = useState();
   useEffect(() => {
@@ -25,14 +24,14 @@ const QuoteDisplay = (props) => {
         console.log('kanye error')
       })
 
-    unsplash.photos.getRandomPhoto({ query: props.input })
+    unsplash.photos.getRandomPhoto({ query: text })
       
       .then(toJson)
       .then(json => {
         setPhoto(json.urls.full)
       
       })
-  },[props.input])
+  },[text])
 
   return(
     <div className='display' >

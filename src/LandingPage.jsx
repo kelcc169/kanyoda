@@ -1,18 +1,16 @@
-import React,{ useState}from 'react';
-import {Link } from 'react-router-dom';
+import React from 'react';
+import {Link} from 'react-router-dom';
 import QuoteDisplay from './QuoteDisplay'
 import './css/HomePage.css';
 
-const LandingPage = () => {
-    const [ text, setText ] = useState({
-        input: ''
-    });
-
+const LandingPage = ({text,setText}) => {
+    
+    // const [input, setInput] = useState('')
+    
     const handleOnChange = (e) => {
-        setText({
-            ...text,
-            [e.target.name]: e.target.value})
+        setText(e.target.value)
     }
+
     return (
         <div className="landing-background">
             <div className='content'>
@@ -21,7 +19,7 @@ const LandingPage = () => {
                 Answers, you seek....
                 </p>
                 <form>
-                <input type='text' onChange={handleOnChange} name="input" value={text.input} placeholder='Please type text'></input> <br />
+                <input type='text' value={text} onChange={handleOnChange} name="input" placeholder='Please type text'></input> <br />
                 <button type="submit"><Link to='/quotes'>KAN-YODA</Link></button>
                 
                 </form>
