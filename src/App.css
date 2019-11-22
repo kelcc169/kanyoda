@@ -11,6 +11,11 @@ p {
   font-size: 2em;
 }
 
+.click {
+  font-size: 1.5em;
+  color: lemonchiffon;
+}
+
 .display {
   display: flex;
   flex-direction: column;
