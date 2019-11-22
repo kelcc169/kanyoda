@@ -1,5 +1,5 @@
 .landing-background {
-    background-image: url('../img/backlights.jpg');
+    background-image: url('../img/hackathonpic.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -15,47 +15,49 @@
     margin-top: 25px;
     height: 100%;
     width: 100%;
+    
 }
 
 .words {
-    margin-top: 0;
     color: white;
-    font-size: 40px;
-    margin-top: 50px;
+    font-size: 60px;
+    margin-top: 80px;
+    font-family: "Times New Roman", Times, serif
 }
 
-input[type="text"]
+textarea[type="textarea"]
 {
     background: rgba(0, 0, 0, 0);
     border: none;
     outline: none;
     color:white;
-    font-size: 60px;
-    /* margin-left: 0px; */
+    font-size: 30px;
     size:20px;
-    margin-top: 120px;
+    margin-top: 60px;
     width: 100vw;
-    /* height: 100vh; */
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    
 }
 button[type="button"]
 {
-    background: rgba(0, 0, 0, 0);
+    background: white;
     border: none;
     outline: none;
     color:white;
-    margin: 0 auto;
-    font-size: 60px;
-    margin-top: 5px;
-    width: 100vw;
-    height: 100vh;
-    padding: 0px;
+    margin: 4px 2px;
+    font-size: 30px;
+    margin-top: 140px;
+    padding: 10px;
+    border-radius: 12%;
+    width: 130px;
 }
 a {
     color: greenyellow;
     text-decoration: none;
     width: 100vw;
     height: 100vh;
-    margin-bottom: 30px;
+    margin-top: 50px;
     padding: 0px;
     
 }
@@ -63,4 +65,5 @@ input::placeholder {
     color: white;
     width: 100vw;
     height: 100vh;
+    opacity: .50;
 }

@@ -9,24 +9,40 @@ const LandingPage = ({text,setText}) => {
         setText(e.target.value)
     }
 
-    return (
+    var displayButton;
+    if(!handleOnChange){
+        displayButton = (
         <div className="landing-background">
             <div className='content'>
-        
                 <p className='words'>
                 Answers, you seek....
                 </p>
                 <form>
-                <input type='text' value={text} onChange={handleOnChange} name="input" placeholder='Please type text'></input> <br />
-                
-                <button type="button"><Link to='/quotes'>KAN-YODA</Link></button>
+                <textarea type='textarea' value={text} onChange={handleOnChange} name="input" placeholder='Type something...'></textarea> <br />
                 </form>
-
             </div>
-    
-    </div>
-
-
+        </div>
+        )
+        
+    } else {
+        displayButton = (
+        <div className="landing-background">
+            <div className='content'>
+                <p className='words'>
+                Answers, you seek....
+                </p>
+                <form>
+                <textarea type='textarea' value={text} onChange={handleOnChange} name="input" placeholder='Type something...'></textarea> <br />
+                <button type="button"><Link to='/quotes'> ASK</Link></button>
+                </form>
+            </div>
+        </div>
+        )
+    }
+    return (
+        <>
+        {displayButton}
+        </>
     )
 
 }
