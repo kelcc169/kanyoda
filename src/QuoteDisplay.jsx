@@ -7,7 +7,7 @@ import dotenv from 'dotenv';
 import yoda from './img/Yoda_Cloud.png'
 dotenv.config()
 
-const unsplash = new Unsplash({ accessKey: 'a50a457eebd47cf427fcb3e1e23f2728eaeaf1b00b329dbe484df2242a670b0a', secret: process.env.SECRET_KEY });
+const unsplash = new Unsplash({ accessKey: '', secret: process.env.SECRET_KEY });
 
 const QuoteDisplay = ({addFave, text}) => {
   const [ photo, setPhoto ] = useState('');
