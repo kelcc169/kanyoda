@@ -1,11 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import QuoteDisplay from './QuoteDisplay'
 import './css/HomePage.css';
 
 const LandingPage = ({text,setText}) => {
     
-    // const [input, setInput] = useState('')
     
     const handleOnChange = (e) => {
         setText(e.target.value)
@@ -24,7 +22,6 @@ const LandingPage = ({text,setText}) => {
                 
                 </form>
 
-                <QuoteDisplay input={text} />
             </div>
     
     </div>
