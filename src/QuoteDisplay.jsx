@@ -5,12 +5,11 @@ import dotenv from 'dotenv';
 import yoda from './img/Yoda_Cloud.png'
 dotenv.config()
 
-const unsplash = new Unsplash({ accessKey: '', secret: process.env.SECRET_KEY });
+const unsplash = new Unsplash({ accessKey: 'a50a457eebd47cf427fcb3e1e23f2728eaeaf1b00b329dbe484df2242a670b0a', secret: process.env.SECRET_KEY });
 
-const QuoteDisplay = () => {
+const QuoteDisplay = ({text}) => {
   const [ photo, setPhoto ] = useState();
   const [ yodaQuote, setYodaQuote ] = useState();
-
   useEffect(() => {
     axios.get('https://api.kanye.rest')
       .then(response => {
@@ -25,12 +24,14 @@ const QuoteDisplay = () => {
         console.log('kanye error')
       })
 
-    unsplash.photos.getRandomPhoto({ query: 'what is the meaning of life' })
+    unsplash.photos.getRandomPhoto({ query: text })
+      
       .then(toJson)
       .then(json => {
         setPhoto(json.urls.full)
+      
       })
-  },[])
+  },[text])
 
   return(
     <div className='display' >
