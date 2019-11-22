@@ -1,0 +1,53 @@
+.content {
+    background-image: url('../img/backlights.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.7;
+    position: absolute;
+}
+
+.landing-background {
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+}
+
+.words {
+    margin-top: 0;
+    color: white;
+    font-size: 40px;
+}
+
+input[type="text"]
+{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    color:white;
+    font-size: 40px;
+    width: 80vw;
+    size:20px;
+    margin-top: 20px;
+}
+button[type="submit"]
+{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    color:white;
+    margin: 0 auto;
+    font-size: 30px;
+    margin-top: 150px;
+}
+a {
+    color: greenyellow;
+    text-decoration: none;
+    
+}
+input::placeholder {
+    color: white;
+}
