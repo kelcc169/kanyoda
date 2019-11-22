@@ -11,12 +11,91 @@ p {
   font-size: 2em;
 }
 
-.click {
-  font-size: 1.5em;
-  color: lemonchiffon;
+a, button {
+  background-color: rgba(0,0,0,0);
+  border: none;
 }
 
-.display {
+.favorite {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  margin: 25px auto;
+  width: 300px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.menu {
+  z-index: 2;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(10, 10, 10, .9);
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+}
+
+.menubutton {
+  margin-top: 25px;
+  width: 100%;
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  padding: 25px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+
+.menulink {
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  width: 100%;
+}
+
+.click {
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+
+.burger {
+  position: absolute;
+  top: 5px;
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+
+.click::after {
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+
+.bottomNav {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(100% - 20px);
+  margin: 10px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+
+.quotedisplay {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,7 +116,7 @@ p {
 }
 
 .yoda {
-  z-index: 10;
+  z-index: 1;
   opacity: .9;
   width: 80%;
   margin: 0 auto;
