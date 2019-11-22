@@ -1,8 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './css/HomePage.css';
-import { 
-    BrowserRouter as Router,
-    Link
-} from 'react-router-dom';
 
-const LandingPage =
+const LandingPage = () => {
+    return(
+        <div>
+            <p>landing page</p>
+            <Link to='/quotes'>Button</Link>
+        </div>
+    )
+}
+
+export default LandingPage;
