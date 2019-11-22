@@ -4,6 +4,7 @@ import './css/HomePage.css';
 
 const LandingPage = ({text,setText}) => {
     
+    
     const handleOnChange = (e) => {
         setText(e.target.value)
     }

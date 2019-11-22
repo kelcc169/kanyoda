@@ -1,9 +1,9 @@
 .landing-background {
     background-image: url('../img/backlights.jpg');
     background-size: cover;
-    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
+    background-attachment: fixed;
     width: 100vw;
     height: 100vh;
 }

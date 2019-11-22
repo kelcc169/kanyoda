@@ -21,9 +21,9 @@ const App = () => {
 
   return (
     <Router>
-      <Route exact path='/' render={() => <LandingPage /> } />
-      <Route path='/quotes' render={ () => <QuoteDisplay addFave={addFave} /> } />
-      <Route path='/favorites' render={ () => <Favorites favorites={favorites} /> } />
+      <Route exact path='/' render={() => <LandingPage setText={setText}/> } />
+      <Route path='/quotes' render={ () => <QuoteDisplay addFave={addFave} text={text} setText={setText} /> } />
+      <Route path='/favorites' render={ () => <Favorites favorites={favorites} text={text} /> } />
     </Router>
   );
 }
