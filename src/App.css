@@ -3,22 +3,6 @@ html {
   padding: 0;
 }
 
-input[type="text"]
-{
-    background: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
-    color:white;
-    font-size: 50px;
-    margin-left: 60px;
-}
 
-input[type="submit"]
-{
-    background: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
-    color:white;
-    margin-left: 220px;
-    font-size: 30px;
-}
+
+
